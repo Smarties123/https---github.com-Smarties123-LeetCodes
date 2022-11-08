@@ -1,11 +1,9 @@
 def romanToInt(self, s: str) -> int:
     
     values = {"I":1, "V":5, "X":10, "L":50, "C":100, "D":500, "M":1000, "IV":4, "IX":9, "XL":50, "XC":90, "CD":500, "CM":900}
-    pair_set = ["IV", "IX", "XL", "XC", "CD", "CM"]
     symbols = []
     subtracted_amount = 0 # amount we need to remove
     total_amount = 0 # raw total
-    sub_total = 0 # what we want
     tmp_1 = 4000
     for symbol in s:
         symbols.append(symbol)  
